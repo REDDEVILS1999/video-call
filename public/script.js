@@ -9,7 +9,7 @@ async function startWebcam() {
             audio: false
         });
         myVideo.srcObject = stream;
-        console.log("good");
+        console.log("Webcam access successful.");
     } catch (error) {
         console.error('Error accessing webcam:', error);
     }
@@ -17,3 +17,4 @@ async function startWebcam() {
 
 // Start the webcam when the page loads
 window.addEventListener('load', startWebcam);
+
